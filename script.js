@@ -10,6 +10,7 @@ let weather = {
       .then((res) => res.json())
       .then((data) => this.displayWeather(data));
   },
+
   displayWeather: function (data) {
     const { name } = data;
     const { icon, description } = data.weather[0];
@@ -46,3 +47,7 @@ document.querySelector(".search-bar").addEventListener("keyup", (event) => {
 });
 
 weather.fetchWeather("Tel-aviv");
+
+$(window).on("load", function () {
+  $(".se-pre-con").fadeOut("slow");
+});
