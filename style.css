@@ -112,3 +112,7 @@ h1.temp {
   top: 0;
   left: 20px;
 }
+
+#loadOverlay {
+  display: none;
+}
